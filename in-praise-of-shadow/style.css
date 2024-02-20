@@ -15,9 +15,6 @@ body{
         rgba(241.53, 241.53, 241.53, 0.83) 24.5%,
         rgba(180.78, 160.74, 158, 0.38) 49.1%,
         rgba(219.47, 222.9, 212.18, 0.51) 78.5%);
-    animation: clips 3s ease infinite;
-    @keyframes clips {
-    50% {
 }
 
 img{
