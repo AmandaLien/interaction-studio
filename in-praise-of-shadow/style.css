@@ -1,0 +1,52 @@
+body{
+    font-family: "quiverleaf-cf", sans-serif;
+    background-color: #c4c8ba;
+    color:darkslateblue;
+}
+
+.diamond {
+    width: 2211px;
+    height: 2069px;
+    top: 0;
+    left: 0;
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(241.53, 241.53, 241.53, 0.83) 24.5%,
+        rgba(180.78, 160.74, 158, 0.38) 49.1%,
+        rgba(219.47, 222.9, 212.18, 0.51) 78.5%
+    );
+}
+
+img{
+    padding: 0;
+    margin: 0;
+    width: 9%;
+}
+
+.title-container{
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    bottom:2px;
+    right: 50px;
+}
+
+h1{
+    font-style: bold;
+    font-size: 120px;
+    padding-bottom: 0;    
+    line-height: 10px;
+}
+
+h3{
+    font-size: 60px;
+}
+
+
+a:hover{
+    box-shadow: 0 0 50px 15px #ffffff;
+}
+
+
+
+
