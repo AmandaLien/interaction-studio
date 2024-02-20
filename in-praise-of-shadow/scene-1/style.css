@@ -1,0 +1,62 @@
+body{
+    background: rgba(244, 244, 233, 1);
+    color: rgba(56, 43, 43, 1);
+    font-family: "quiverleaf-cf", sans-serif;
+
+}
+
+a{
+    display: inline-block;
+    float: right;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.columns1{
+    background-color: darkred;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    position:absolute;
+}
+.columns2{
+    background-color: darkred;
+    height: 100%;
+    width: 40px;
+    position:absolute;
+    display: flex;
+}
+.columns3{
+    background-color: darkred;
+    height: 100%;
+    width: 40px;
+    position:absolute;
+    display: flex;
+}
+.columns4{
+    background-color: darkred;
+    height: 100%;
+    width: 40px;
+    position:absolute;
+}
+.columns5{
+    background-color: darkred;
+    height: 100%;
+    width: 40px;
+    position:absolute;
+}
+
+
+
+.text{
+    display: block;
+    position: absolute;
+    font-size: 22px;
+    width: 45%;
+    right: 80px;
+    top: 180px;
+}
