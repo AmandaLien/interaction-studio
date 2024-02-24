@@ -1,47 +1,53 @@
-body{
+html, body{
     font-family: "quiverleaf-cf", sans-serif;
     background-color: #c4c8ba;
     color:darkslateblue;
+    height: 100%; 
+    overflow: hidden;
 }
 
 .diamond {
-    width: 2211px;
-    height: 2069px;
-    top: -1000px;
-    transform: rotate(45deg);
-    transform-origin: 0 100%;
-    background: radial-gradient(
-        50% 50% at 50% 50%,
-        rgba(241.53, 241.53, 241.53, 0.83) 24.5%,
-        rgba(180.78, 160.74, 158, 0.38) 49.1%,
-        rgba(219.47, 222.9, 212.18, 0.51) 78.5%);
-}
-
-img{
     padding: 0;
     margin: 0;
-    width: 9%;
+    top: -150px;
+    left: -160px;
+    position: absolute;
+    transform: scale(4);
 }
 
-.title-container{
+.container{
     width: 100%;
     text-align: right;
     position: absolute;
     bottom:2px;
     right: 50px;
 }
+.roof{
+    padding: 0;
+    margin: 0;
+    display: inline;
+    img{
+        width: 12%;
+    }
+}
+.title{
+    overflow: hidden;
+    position: relative;
+}
+
 
 h1{
     font-style: bold;
     font-size: 120px;
-    padding-bottom: 0;    
+    padding-bottom: 0; 
     line-height: 10px;
 }
 
 h3{
     font-size: 60px;
+    padding-top: 0;
+    margin-top: 0;
 }
-
 
 a:hover{
     box-shadow: 0 0 50px 15px #ffffff;
