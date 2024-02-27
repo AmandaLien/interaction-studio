@@ -2,8 +2,32 @@ body{
     background: rgb(238, 215, 179);
     color: rgb(112, 72, 84);
     font-family: "gyst-variable", sans-serif;
-    font-variation-settings: "wght" 100;
+    font-variation-settings: "wght" 200;
+    scroll-behavior: smooth;
+    margin: 0;
 }
+
+
+.shadow{
+    display: block;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(122, 89, 59, 0.827)10%, rgba(255, 0, 0, 0) 100%);
+    width: 20vw;
+    height: 320vh;
+    animation: enlarge 10s infinite;
+}
+@keyframes enlarge{
+    0%{
+        width: 20vw;
+    }
+    50%{
+        width: 70vw;
+    }
+    100%{
+        width: 20vw;;
+    }
+}
+
 .container{
     position: relative;
 
@@ -26,8 +50,9 @@ body{
     background-color: rgb(143, 113, 90);
     height: 15vh;
     width: 57.5vw;
-    bottom: -270vh;
+    bottom: -310vh;
     right: 0;
+    border-radius: 10px;
 }
 .back{
     display: block;
@@ -35,8 +60,9 @@ body{
     background-color: rgb(157, 112, 126);
     top: 145px;
     width: 725px;
-    height: 255vh;
+    height: 295vh;
     right: 2vw;
+    border-radius: 2px;
 }
 .text{
     display: block;
@@ -79,7 +105,7 @@ body{
     top: 295px;
     display: block;
     position: absolute;
-    right:83px;
+    right:92px;
 }
 
 
