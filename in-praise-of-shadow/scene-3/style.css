@@ -90,7 +90,7 @@ p{
 }
 
 .deco1{
-    background-color: rgba(159, 185, 234);
+    background-color:darkkhaki;
     height: 120px;
     width: 14px;
     display: inline-block;
@@ -100,7 +100,7 @@ p{
 
 }
 .deco2{
-    background-color: rgba(159, 185, 234);
+    background-color: darkkhaki;
     height: 120px;
     width: 14px;
     display: inline-block;
@@ -110,7 +110,7 @@ p{
 
 }
 .deco3{
-    background-color: rgb(159, 185, 234);
+    background-color: darkkhaki;
     width: 612px;
     height: 20px;
     top: 295px;

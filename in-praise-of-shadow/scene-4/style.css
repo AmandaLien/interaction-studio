@@ -1,6 +1,6 @@
 body{
     background: rgb(255, 245, 228);
-    color: rgb(59, 36, 43);
+    color: rgb(88, 14, 24);
     font-family: "gyst-variable", sans-serif;
     font-variation-settings: "wght" 200;
     scroll-behavior: smooth;
@@ -13,7 +13,7 @@ body{
 
 .container{
     position: fixed;
-    background-color: rgb(52, 53, 73);
+    background-color: rgba(60, 16, 31, 0.791);
     transform: rotate(-35deg);
     left: -145vw;
     bottom: 0;
