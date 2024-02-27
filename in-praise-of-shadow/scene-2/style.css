@@ -20,6 +20,15 @@ body{
     top: 135px;
     left: 54%;
     text-indent: 30px;
+    animation: loadin 1s ease-in; 
+}
+@keyframes loadin{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .screen{
@@ -122,4 +131,26 @@ img{
 img:hover{
     -webkit-filter: drop-shadow(0 0 5rem #d2c33d);
     filter: drop-shadow(0 0 5rem #d2c33d);
+}
+
+
+@media (max-width: 768px) {
+    
+    .text{
+        width: 300px;
+        font-size: 15px;
+        margin: 10px 15px 0  0;
+    }
+    img{
+        bottom: -1250vh;
+    }
+}
+@media (max-width: 320px) {
+    .text{
+        width: 300px;
+        font-size: 15px;
+    }
+    img{
+        bottom: -120vh;
+    }
 }
