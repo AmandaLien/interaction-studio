@@ -1,15 +1,14 @@
 body{
     background: rgba(244, 244, 233, 1);
     color: rgba(56, 43, 43, 1);
-    font-family: "quiverleaf-cf", sans-serif;
-    font-weight: 500;
+    font-family: "gyst-variable", sans-serif;
+    font-weight: 100;
     overflow-x: hidden;
     margin: 0;
 }
 
 a{
     display: inline-block;
-    float: right;
 }
 
 .roofs{
@@ -42,9 +41,9 @@ a{
     height: 100%;
 }
 .left-columns{
-    background-color: rgba(94, 0, 0, 0.681);
+    background-color: rgb(115, 86, 86);
     width: 100px;
-    height: 110vh; 
+    height: 140vh; 
     display: inline-block;
     margin: 0 25px 0 0;
     position: absolute;
@@ -52,18 +51,18 @@ a{
     top: -15px;
 }
 .column{
-    background-color: rgba(94, 0, 0, 0.681);
+    background-color: rgb(115, 86, 86);
     width: 70px;
-    height: 110vh; 
+    height: 140vh; 
     display: inline-block;
     position: absolute;
     top: -15px;
     left: 47vw;
 }
 .right-columns{
-    background-color: rgba(94, 0, 0, 0.681);
+    background-color: rgb(115, 86, 86);
     width: 100px;
-    height: 110vh;
+    height: 140vh;
     margin: 0 25px 0 0;
     padding: 0;
     display: inline-block;
@@ -82,6 +81,7 @@ a{
     margin-top: 10px;
     top: -20px;
     left: 170px;
+    background-color: ;
 }
 .text2{
     display: inline-block;
@@ -96,11 +96,10 @@ a{
 }
 
 .ground{
-    background-color: tan;
+    background-color: rgb(211, 180, 151);
     height: 90px;
     width: 100vw;
     display: inline-block;
     position: absolute;
-    bottom: -325px;
-
+    bottom: -470px;
 }

@@ -1,0 +1,126 @@
+body{
+    background: rgba(197, 160, 126, 0.827);
+    color: rgb(255, 255, 231);
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+}
+.container{
+    position: relative;
+
+}
+.text{
+    display: block;
+    position: absolute;
+    font-size: 22px;
+    line-height: 1.4;
+    width: 500px;
+    padding: 10px 0 15vh 0;
+    margin-top: 10px;
+    top: 135px;
+    left: 54%;
+    text-indent: 30px;
+}
+
+.screen{
+    perspective: 1000px;
+    position: relative;
+}
+.row1{
+    display: flex;
+    width: 55%;
+    position: fixed;
+    bottom: 41vh;
+    left: 125px;
+    animation: lineUp3 10s infinite;
+}
+.row2{
+    display: flex;
+    width: 55%;
+    position: fixed;
+    left: 55px;
+    bottom: 29vh;
+    animation: lineUp2 10s infinite;
+}
+.row3{
+    display: flex;
+    width: 55%;
+    position: fixed;
+    left: -15px;
+    bottom: 17vh;
+    animation: lineUp 10s infinite;
+}
+.row4{
+    display:flex;
+    width: 55%;
+    position: fixed;
+    left: -80px;
+    bottom: 5vh;
+}
+.rectangle {
+    flex: 1;
+    width: 10vw;
+    height: 10vh; 
+    background-color:rgba(233, 227, 172, 0.431);
+    margin: 1px 9px 5px; /* Small margin for separation */
+    animation: skewAnimation 10s infinite;
+}
+  
+@keyframes skewAnimation {
+    0% {
+        transform: skew(-40deg); /* Initial skew angle */
+    }
+    50% {
+        transform: skew(-60deg); /* Target skew angle */
+    }
+    100% {
+        transform: skew(-40deg); /* Back to the initial skew angle */
+    }
+}
+@keyframes lineUp{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(5vw);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes lineUp2{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(10vw);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes lineUp3{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(15vw);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+img{
+    /* width: 9%; */
+    scale: 0.15;
+    position: absolute;
+    display: inline-block;
+    right: -22vw;
+    bottom: -275vh;
+    filter: saturate(0.65)
+}
+img:hover{
+    /* box-shadow: 0px 0px 5px 5px #ffffff; */
+    -webkit-filter: drop-shadow(0 0 5rem #ffffff);
+    filter: drop-shadow(0 0 5rem #ffffff);
+}

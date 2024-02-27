@@ -1,0 +1,100 @@
+body{
+    background: rgb(238, 215, 179);
+    color: rgb(112, 72, 84);
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+}
+.container{
+    position: relative;
+
+}
+.scroll{
+    display: relative;
+}
+.triangle{
+    font-size: 350px;
+    font-style: light;
+    display: block;
+    position: absolute;
+    top:-190px;
+    right: 16%;
+    color: rgb(143, 113, 90);
+}
+.bottom{
+    display: block;
+    position: absolute;
+    background-color: rgb(143, 113, 90);
+    height: 15vh;
+    width: 57.5vw;
+    bottom: -270vh;
+    right: 0;
+}
+.back{
+    display: block;
+    position: absolute;
+    background-color: rgb(157, 112, 126);
+    top: 145px;
+    width: 725px;
+    height: 255vh;
+    right: 2vw;
+}
+.text{
+    display: block;
+    position: absolute;
+    font-size: 22px;
+    line-height: 1.4;
+    width: 500px;
+    padding: 15vh 55px 15vh 55px;
+    margin-top: 10px;
+    top: 285px;
+    left: 48%;
+    text-indent: 30px;
+    background-color:ivory;
+    
+}
+.deco1{
+    background-color: rgba(159, 185, 234);
+    height: 120px;
+    width: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 145px;
+    right: 21%
+
+}
+.deco2{
+    background-color: rgba(159, 185, 234);
+    height: 120px;
+    width: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 145px;
+    right: 36%
+
+}
+.deco3{
+    background-color: rgb(159, 185, 234);
+    width: 612px;
+    height: 20px;
+    top: 295px;
+    display: block;
+    position: absolute;
+    right:83px;
+}
+
+
+
+
+
+img{
+    scale: 0.15;
+    position: absolute;
+    display: inline-block;
+    right: -22vw;
+    bottom: -5vh;
+    filter: saturate(0.65)
+}
+img:hover{
+    -webkit-filter: drop-shadow(0 0 10rem #d2c33d);
+    filter: drop-shadow(0 0 10rem #d2c33d);
+}

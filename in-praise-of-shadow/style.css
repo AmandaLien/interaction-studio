@@ -1,7 +1,7 @@
 html, body{
     font-family: "quiverleaf-cf", sans-serif;
     background-color: #c4c8ba;
-    color:darkslateblue;
+    color:rgb(63, 55, 117);
     height: 100%; 
     overflow: hidden;
 }
@@ -25,32 +25,39 @@ html, body{
 .roof{
     padding: 0;
     margin: 0;
-    display: inline;
-    img{
-        width: 12%;
-    }
+    display: inline-block;
+    scale: 0.2;
+    position: absolute;
+    right: -21.5vw;
+    top: -12vh;
+    filter: saturate(0.65)
 }
+
 .title{
-    overflow: hidden;
     position: relative;
 }
 
-
 h1{
-    font-style: bold;
-    font-size: 120px;
-    padding-bottom: 0; 
+    font-size: 130px;
+    padding: 0 0 20px 0; 
     line-height: 10px;
+    font-weight: 1000;
+    color: rgb(112, 72, 84);
 }
 
 h3{
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 0;
     margin-top: 0;
+    line-height: 75px;
+    font-family: "gyst-variable", sans-serif;
+    font-variation-settings: "wght" 100;
 }
 
 a:hover{
-    box-shadow: 0 0 50px 15px #ffffff;
+    -webkit-filter: drop-shadow(0 0 10rem #d2c33d);
+    filter: drop-shadow(0 0 10rem #d2c33d);
+    
 }
 
 
