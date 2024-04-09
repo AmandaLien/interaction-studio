@@ -61,3 +61,6 @@
 #portfolio{
     text-decoration: underline;
 }
+#portfolio:hover, #portfolio:active{
+    color: #FDD1D1;
+}
