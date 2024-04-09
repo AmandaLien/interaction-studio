@@ -28,7 +28,7 @@
 .top-bar::before{
     content: url("https://i.postimg.cc/25R5nMK3/21st-century-cats.png");
     position: absolute;
-    top: 22px;
+    top: 22px;  
     left: -570px;
 }
     
