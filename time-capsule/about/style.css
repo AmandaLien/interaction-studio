@@ -1,0 +1,63 @@
+:root {
+    --color-bg: cornsilk;
+    --color-text-main: #FDCA7C;
+    --color-brown: #765514;
+    --color-hover: #74500A;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "kavoon", serif;
+  }
+  
+  body,
+  html {
+    background-color: cornsilk;
+  }
+  
+.top-bar{
+    transform: scale(0.285);
+    position: relative;
+}
+.top-bar::before{
+    content: url("/time-capsule/assets/21st-century-cats.png");
+    position: absolute;
+    top: 40px;
+    left: -1550px;
+}
+.top-bar:hover::before{
+    content: url("/time-capsule/assets/21st-century-cats-link.png");
+}
+
+  .navigation{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    color: var(--color-text-main);
+    font-size: clamp(12px, 25px, 30px);
+    right: 80px;
+  }
+  a{
+    color: var(--color-text-main);
+    text-decoration: none;
+  }
+  
+  .text{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    width: 50%;
+    font-size: clamp(15px, 28px, 32px);
+    font-family: var(--font-family); 
+    line-height: 1.5;
+  }
+  
+  .one{
+    color: #FDD1D1;
+  }
+  
+  .two, .three{
+    color: #f5c67f;
+  }  
+#portfolio{
+    text-decoration: underline;
+}

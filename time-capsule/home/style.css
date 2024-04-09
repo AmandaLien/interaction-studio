@@ -1,0 +1,291 @@
+
+:root {
+    --color-bg: cornsilk;
+    --color-text-main: #FDCA7C;
+    --color-brown: #765514;
+    --color-hover: #74500A;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "kavoon", serif;
+  }
+  
+  body,
+  html {
+    background-color: cornsilk;
+  }
+  
+  body {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  
+  
+  .top-bar{
+      transform: scale(0.285);
+      position: relative;
+  }
+  .top-bar::before{
+      content: url("/time-capsule/assets/21st-century-cats.png");
+      position: absolute;
+      top: 40px;
+      left: -1550px;
+  }
+    
+  .navigation{
+      display: flex;
+      position: absolute;
+      top: 60px;
+      color: var(--color-text-main);
+      font-size: clamp(15px, 28px, 32px);
+      right: 60px;
+      font-family: var(--font-family);
+  }
+  a{
+    color: var(--color-text-main);
+    text-decoration: none;
+  }
+  #view-all {
+    margin: 0 0 0 0;
+  }
+  #about{
+    margin: 0 0 0 35px; 
+  }
+  
+  #about:hover, #view-all:hover{
+    color: var(--color-hover);
+    
+  }
+  #about:visited, #view-all:visited{
+    color: var(--color-text-main);
+  }
+  
+
+
+  #mz-gallery-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    top: 120px;
+    left: 15px;
+  }
+  
+  #mz-gallery {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 93vw;
+    height: 68vw;
+    max-height: 530px;
+    max-width: 1900px;
+    left: 27px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-padding: 0 0 0 55px;
+    scroll-behavior: smooth;
+    /* firefox scrollbar */
+    scrollbar-width: auto;
+    animation: background 300s linear infinite;
+  }
+  
+  
+/*scroll bar*/
+  #mz-gallery::-webkit-scrollbar {
+    height: 85px;
+  }
+  
+  #mz-gallery::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  #mz-gallery::-webkit-scrollbar-thumb {
+    background-image: url("/time-capsule/assets/paw1.png"),
+            linear-gradient(100deg, transparent, transparent);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    
+  }
+  
+  #mz-gallery::-webkit-scrollbar-thumb:hover, #mz-gallery::-webkit-scrollbar-thumb:active{
+    background-image: url("/time-capsule/assets/paw2.png"),
+    linear-gradient(100deg, transparent, transparent);
+  }
+  
+  #mz-gallery::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    height: 40px;
+    width: 80px;
+    background-size: 20px;
+    background-position: center;
+  }
+  
+  #mz-gallery::-webkit-scrollbar-button:single-button:horizontal:increment {
+    height: 40px;
+    width: 80px;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  #mz-gallery figure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 32%;
+    min-height: 100px;
+    margin-right: 80px;
+    transition: all 0.3s ease-in-out;
+    height: 120%;
+    width: 300px;
+  }
+  #mz-gallery figure img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+  }
+  
+  #mz-gallery figure:nth-child(1) {
+    margin-left: 80px;
+  }
+  
+  #mz-gallery figure div {
+    position: absolute;
+    width: 1%;
+    height: 1%;
+    background: transparent;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    margin-left: 25px;
+    
+  }
+  
+  #mz-gallery figure:hover img {
+    height: 335px;
+    width: 335px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #mz-gallery figure:hover {
+    padding: 0px 20px;
+  }
+  
+  
+  #mz-gallery figure:hover div {
+    width: 25%;
+    height: 25%;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 1145px) {
+    #mz-gallery figure {
+      scroll-snap-align: center;
+    }
+    #mz-gallery {
+      scroll-padding: 0px 0px 0px 0px !important;
+    }
+  }
+  
+  @media (max-width: 610px) {
+    #mz-gallery {
+      max-height: 320px;
+    }
+    #mz-gallery figure {
+      margin-right: 20px;
+    }
+    #mz-gallery figure:nth-child(1) {
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-height: 425px) {
+    #mz-gallery figure figcaption {
+      font-size: 14pt;
+      line-height: 20pt;
+    }
+    
+  }
+  
+  @media (max-height: 340px) {
+    #mz-gallery {
+      background-size: 30px 30px;
+      scroll-padding: 0 0 0 28px;
+    }
+    #mz-gallery figure {
+      margin-right: 30px;
+    }
+    #mz-gallery figure:nth-child(1) {
+      margin-left: 30px;
+    }
+    #mz-gallery figure figcaption {
+      font-size: 12pt;
+      line-height: 18pt;
+      font-weight: 400;
+      background-size: 30px 30px;
+    }
+  }
+  
+  @media (max-height: 280px) {
+    #mz-gallery::-webkit-scrollbar {
+      height: 20px;
+    }
+    #mz-gallery::-webkit-scrollbar-button:single-button:horizontal:decrement,
+    #mz-gallery::-webkit-scrollbar-button:single-button:horizontal:increment {
+      width: 80px;
+      height: 20px;
+      background-size: 15px;
+    }
+  }
+  
+  @media (max-height: 230px) {
+    #mz-gallery figure:hover img {
+      outline-offset: 10px;
+    }
+  }
+  
+  @media (max-height: 165px) {
+    #mz-gallery {
+      margin: 100px 0 0 0;
+    }
+    #mz-gallery figure {
+      margin-right: 20px;
+    }
+    #mz-gallery figure:nth-child(1) {
+      margin-left: 20px;
+    }
+  }
+  
+  /* touch screen devices */
+  
+  @media (pointer: coarse) {
+    #mz-gallery * {
+      pointer-events: none;
+    }  
+    #mz-gallery {
+      scroll-snap-type: unset;
+      scroll-padding: unset;
+      scroll-behavior: unset;
+    }
+    #mz-gallery::-webkit-scrollbar {
+      height: 35px;
+    }
+  
+    #mz-gallery figure {
+      scroll-snap-align: unset;
+    }
+  }
+  
+  
+  
