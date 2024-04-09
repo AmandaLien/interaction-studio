@@ -9,23 +9,23 @@
     --font-family: "kavoon", serif;
   }
   
-  body,
-  html {
+body,
+html {
     background-color: cornsilk;
-  }
-  
+}
 .top-bar{
-    transform: scale(0.285);
+    transform: scale(0.515);
     position: relative;
 }
 .top-bar::before{
-    content: url("/time-capsule/assets/21st-century-cats.png");
+    content: url("https://i.postimg.cc/25R5nMK3/21st-century-cats.png");
     position: absolute;
-    top: 40px;
-    left: -1550px;
+    top: 22px;  
+    left: -570px;
 }
 .top-bar:hover::before{
-    content: url("/time-capsule/assets/21st-century-cats-link.png");
+    content: url("https://i.postimg.cc/9QqMRC1v/21st-century-cats-link.png");
+    
 }
 
   .navigation{
