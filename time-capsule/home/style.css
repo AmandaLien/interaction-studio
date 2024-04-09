@@ -21,16 +21,16 @@
   
   
   
-  .top-bar{
-      transform: scale(0.285);
-      position: relative;
-  }
-  .top-bar::before{
-      content: url("https://i.postimg.cc/25R5nMK3/21st-century-cats.png");
-      position: absolute;
-      top: 40px;
-      left: -1550px;
-  }
+.top-bar{
+    transform: scale(0.515);
+    position: relative;
+}
+.top-bar::before{
+    content: url("https://i.postimg.cc/25R5nMK3/21st-century-cats.png");
+    position: absolute;
+    top: 22px;
+    left: -570px;
+}
     
   .navigation{
       display: flex;
