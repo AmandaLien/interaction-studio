@@ -16,7 +16,7 @@ body,
 html {
     background-color: cornsilk;
 }
-  
+
 .top-bar{
     transform: scale(0.515);
     position: relative;
@@ -29,7 +29,6 @@ html {
 }
 .top-bar:hover::before{
     content: url("https://i.postimg.cc/9QqMRC1v/21st-century-cats-link.png");
-    
 }
     
 .navigation{
