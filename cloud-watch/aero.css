@@ -72,7 +72,6 @@ body{
 /*clouds*/
 #hour-group {
     position: absolute;
-    left: -8vw;
     top: 7%;
     width: fit-content;
     display: flex;
@@ -130,7 +129,6 @@ body{
 /*minutes*/
 #minute-group {
     position: absolute;
-    left: -5vw;
     top: 22%;
     width: fit-content;
     display: flex;
@@ -188,7 +186,6 @@ body{
 /*minutes*/
 #second-group {
     position: absolute;
-    left: -5.5vw;
     top: 35%;
     width: fit-content;
     display: flex;
