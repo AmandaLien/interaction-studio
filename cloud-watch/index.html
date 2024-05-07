@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frutiger Aero Web</title>
+  <link rel="stylesheet" href="aero.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!--clouds-->
+  <div class="hour-group" id="hour-group">
+    <div class="ellipseH" id="center"></div>
+    <div class="ellipseH" id="top-far-left"></div>
+    <div class="ellipseH" id="top-left"></div>
+    <div class="ellipseH" id="top-middle-left"></div>
+    <div class="ellipseH" id="top-middle"></div>
+    <div class="ellipseH" id="top-right"></div>
+    <div class="ellipseH" id="top-far-right"></div>
+  </div>
+
+  <div class="minute-group" id="minute-group">
+    <div class="ellipseM" id="center2"></div>
+    <div class="ellipseM" id="top-far-left2"></div>
+    <div class="ellipseM" id="top-left2"></div>
+    <div class="ellipseM" id="top-middle-right2"></div>
+    <div class="ellipseM" id="top-middle2"></div>
+    <div class="ellipseM" id="top-right2"></div>
+    <div class="ellipseM" id="top-far-right2"></div>
+  </div>
+
+  <div class="second-group" id="second-group">
+    <div class="ellipseS" id="center3"></div>
+    <div class="ellipseS" id="top-far-left3"></div>
+    <div class="ellipseS" id="top-left3"></div>
+    <div class="ellipseS" id="top-middle-left3"></div>
+    <div class="ellipseS" id="top-middle3"></div>
+    <div class="ellipseS" id="top-right3"></div>
+    <div class="ellipseS" id="top-far-right3"></div>
+  </div>  
+
+
+  <!-- TaskBar -->
+  <div class="taskbar">
+    <button class="startbuttonactive"></button>
+    <!-- this is the default state.
+    the button above is used for hover and active.
+    if you want the active state to stick, switch the
+    class on the button to .startbuttonactive and
+    it will stick. -->
+    <div class="startorb"></div>
+      <div class="taskbaricons" id="taskbaricons">
+        <button class="taskbarbutton taskbarfocused"><img class="taskbaricon" draggable="false" src="./icons/information.png"></button>
+      </div>
+      <div id="datetime"></div>
+      <div class="aeropeek"></div>
+  </div>
+
+  
+
+  <div class="grass back" id="back"></div>
+  <div class="grass front" id="front"></div>
+
+
+<!-- Window -->
+    <div class="window" style="width: 400px" id="window">
+        <div class="title-bar" id="windowheader">
+            <img aria-label="windowicon" src="./icons/information.png">
+
+          <div class="title-bar-text">Support</div>
+
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" style="height:225px;">
+
+          <p>welcome to</p>
+          <p id="name1">Cloud Watch</p>
+          <hr>
+          <br>
+          <p>spend your day with the gliding clouds</p>
+
+          <audio controls autoplay id="soundtrack">
+            <source src="assets/Revisit the 2000's_ 1 Hour Frutiger Aero Mix for Nostalgia.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <br>
+          <br>
+          <p>Designed by Amanda Lien 2024</p>
+          <!--
+            <input type="checkbox" id="checkbox1">
+          <label for="checkbox1">CheckBox</label>
+
+          <fieldset>
+            <div class="field-row">radio buttons:</div>
+            <div class="field-row">
+              <input id="radio5" type="radio" name="fieldset-example">
+              <label for="radio5">Me?</label>
+            </div>
+            <div class="field-row">
+              <input id="radio6" type="radio" name="fieldset-example">
+              <label for="radio6">No, Me!</label>
+            </div>
+          </fieldset>
+
+          <section class="field-row" style="justify-content: flex-end">
+            <button>OK</button>
+            <button>Cancel</button>
+          </section>
+          -->
+          
+        </div>
+      </div>
+
+
+      <!-- window drag -->
+  <script src="./WindowDrag.js"></script>
+
+  <script src="time.js"></script>
+
+  <!-- Taskbar Gradient Hover -->
+  <script src="./TaskbarGradient.js"></script>
+</body>
+</html>
