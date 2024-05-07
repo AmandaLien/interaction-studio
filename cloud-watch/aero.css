@@ -77,6 +77,7 @@ body{
     width: fit-content;
     display: flex;
     flex-direction: row;
+    transition: 1s linear;
 }
 .ellipseH {
     width: 100px;
@@ -134,6 +135,7 @@ body{
     width: fit-content;
     display: flex;
     flex-direction: row;
+    transition: 1s linear;
 }
 .ellipseM {
     width: 60px;
@@ -191,7 +193,7 @@ body{
     width: fit-content;
     display: flex;
     flex-direction: row;
-    transition: 1000ms linear;
+    transition: 1s linear;
 }
 .ellipseS {
     width: 40px;

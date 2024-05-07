@@ -1,9 +1,7 @@
 let today = new Date();
 
-
-
-
 function updateTime() {
+    let today = new Date();
     let thisHour = today.getHours();
     let thisMinute = today.getMinutes();
     let thisSecond = today.getSeconds();
@@ -22,11 +20,7 @@ function updateTime() {
 
 
     //// TIME ////
-    
-    
-    
     let timeOfDay;
-    let newHour;
 
     if(thisHour == 0){
         timeOfDay = "AM";
@@ -53,6 +47,13 @@ function updateTime() {
     }
     else{
         timeElem.innerHTML = thisHour + ":" + thisMinute + " " + timeOfDay; 
+    }
+
+    if(thisMinute % 10) {
+        timeElem.innerHTML = thisHour + ":" + thisMinute + " " + timeOfDay; 
+      }
+      else{
+        timeElem.innerHTML = thisHour + ":" + "0" + thisMinute + " " + timeOfDay; 
     }
     
     
@@ -151,6 +152,8 @@ skyChange();
 
 
 function cloudMovement(){
+    let today = new Date();
+
     let thisHour3 = today.getHours();
     let thisMinute3 = today.getMinutes();
     let thisSecond3 = today.getSeconds();
