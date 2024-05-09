@@ -49,7 +49,7 @@ function updateTime() {
         timeElem.innerHTML = thisHour + ":" + thisMinute + " " + timeOfDay; 
     }
 
-    if(thisMinute % 10 || thisMinute == 10) {
+    if(thisMinute > 9) {
         timeElem.innerHTML = thisHour + ":" + thisMinute + " " + timeOfDay; 
       }
       else{
