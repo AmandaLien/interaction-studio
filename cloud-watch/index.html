@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>cloud watch</title>
+  <link rel="icon" href="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-11/256/Cloud-icon.png"/>
   <link rel="stylesheet" href="aero.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -48,7 +49,7 @@
     it will stick. -->
     <div class="startorb"></div>
       <div class="taskbaricons" id="taskbaricons">
-        <button class="taskbarbutton taskbarfocused"><img class="taskbaricon" draggable="false" src="./icons/information.png"></button>
+        <button onclick="toggle()" class="taskbarbutton taskbarfocused"><img class="taskbaricon" draggable="false" src="./icons/information.png"></button>
       </div>
       <div id="datetime"></div>
       <div class="aeropeek"></div>
@@ -61,61 +62,44 @@
 
 
 <!-- Window -->
-    <div class="window" style="width: 400px" id="window">
-        <div class="title-bar" id="windowheader">
-            <img aria-label="windowicon" src="./icons/information.png">
+  <div class="window" id="window">
+      <div class="title-bar" id="windowheader">
+          <img aria-label="windowicon" src="./icons/information.png">
 
-          <div class="title-bar-text">Support</div>
+        <div class="title-bar-text">Support</div>
 
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div>
-        </div>
-        <div class="window-body" style="height:225px;">
-
-          <p>welcome to</p>
-          <p id="name1">Cloud Watch</p>
-          <hr>
-          <br>
-          <p>spend your day with a few gliding clouds</p>
-
-          <audio controls autoplay id="soundtrack">
-            <source src="assets/Revisit the 2000's_ 1 Hour Frutiger Aero Mix for Nostalgia.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <br>
-          <br>
-          <p>Designed by Amanda Lien 2024</p>
-          <!--
-            <input type="checkbox" id="checkbox1">
-          <label for="checkbox1">CheckBox</label>
-
-          <fieldset>
-            <div class="field-row">radio buttons:</div>
-            <div class="field-row">
-              <input id="radio5" type="radio" name="fieldset-example">
-              <label for="radio5">Me?</label>
-            </div>
-            <div class="field-row">
-              <input id="radio6" type="radio" name="fieldset-example">
-              <label for="radio6">No, Me!</label>
-            </div>
-          </fieldset>
-
-          <section class="field-row" style="justify-content: flex-end">
-            <button>OK</button>
-            <button>Cancel</button>
-          </section>
-          -->
-          
+        <div class="title-bar-controls">
+          <button onclick="toggle()" aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
         </div>
       </div>
+      <div class="window-body">
+
+        <p>welcome to</p>
+        <p id="name1">Cloud Watch</p>
+        <hr>
+        <p id="text">spend your day with a few gliding clouds.</p>
+
+        <audio controls autoplay id="soundtrack">
+          <source src="assets/Revisit the 2000's_ 1 Hour Frutiger Aero Mix for Nostalgia.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio><br>
+
+        <br>
+        
+        <div class="last-line">
+          <a href="https://www.youtube.com/watch?v=hHvhz6b6edo&t=2098s">playlist source</a>
+        <a href="https://aesthetics.fandom.com/wiki/Frutiger_Aero" id="frutiger">about frutiger aero</a>
+        </div>
+        <p id="text">A time based website designed by <a href="https://amandalien.github.io/interaction-lab/" id="portfolio">Amanda Lien</a> 2024.</p>
+      </div>
+  </div>
 
 
       <!-- window drag -->
   <script src="./WindowDrag.js"></script>
+  <script src="./window.js"></script>
 
   <script src="time.js"></script>
 

@@ -49,7 +49,7 @@ function updateTime() {
         timeElem.innerHTML = thisHour + ":" + thisMinute + " " + timeOfDay; 
     }
 
-    if(thisMinute % 10) {
+    if(thisMinute % 10 || thisMinute == 10) {
         timeElem.innerHTML = thisHour + ":" + thisMinute + " " + timeOfDay; 
       }
       else{
@@ -165,6 +165,26 @@ function cloudMovement(){
     let hourToVW = map(thisHour3, 0, 23, -8, 100);
     let minToVW = map(thisMinute3, 0, 59, -5, 100);
     let secToVW = map(thisSecond3, 0, 59, -5.5, 100);
+
+    if(thisSecond3 == 59 || thisSecond3 == 0){
+        seconds.style.opacity = "0";
+    }
+    else{
+        seconds.style.opacity = "100";
+    }
+
+    if(thisMinute3 == 59 && thisSecond3 == 59){
+        minute.style.opacity = "0";
+    }
+    else{
+        minute.style.opacity = "100";
+    }
+    if(thisHour3 == 23 && thisMinute3 == 59 && thisSecond3 == 59){
+        hour.style.opacity = "0";
+    }
+    else{
+        hour.style.opacity = "100";
+    }
 
     hour.style.left = hourToVW + "vw";
     minute.style.left = minToVW + "vw";
